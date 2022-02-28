@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bgcity"
+    android:fitsSystemWindows="true"
+    >
+
+    <ImageView
+        android:id="@+id/dinar"
+        android:layout_width="67dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477"
+        app:srcCompat="@drawable/dinar" />
+
+    <ImageView
+        android:id="@+id/five100m"
+        android:layout_width="67dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207"
+        app:srcCompat="@drawable/five100millimes" />
+
+    <ImageView
+        android:id="@+id/moneySlot"
+        android:layout_width="354dp"
+        android:layout_height="403dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/parcmeterframe" />
+
+    <TextView
+        android:id="@+id/moneyOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:textFontWeight="700"
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        android:fontFamily="@font/calculator"
+        app:layout_constraintBottom_toBottomOf="@+id/moneySlot"
+        app:layout_constraintEnd_toEndOf="@+id/moneySlot"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/moneySlot"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296" />
+
+    <ImageView
+        android:id="@+id/fivedinars"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dinar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fivedinars" />
+
+    <Button
+        android:id="@+id/redbutton"
+        android:layout_width="93dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/red"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="@+id/moneySlot"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="@+id/moneySlot"
+        app:layout_constraintTop_toTopOf="@+id/moneySlot" />
+
+    <Button
+        android:id="@+id/greenbutton"
+        android:backgroundTint="@color/green"
+        android:layout_width="93dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/moneySlot"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="@+id/moneySlot"
+        app:layout_constraintTop_toTopOf="@+id/redbutton" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

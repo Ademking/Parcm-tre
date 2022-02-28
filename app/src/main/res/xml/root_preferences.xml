@@ -1,0 +1,47 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Configuration">
+
+        <EditTextPreference
+            app:key="prix_minute"
+            app:title="Prix Minute (en millimes)"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="10"/>
+
+
+        <EditTextPreference
+            app:key="timeout_"
+            app:title="TimeOut (en minutes)"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="5"/>
+
+        <EditTextPreference
+            app:key="montant_min"
+            app:title="Montant Minimum (en dinars)"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="1"/>
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="etat"
+            android:title="En service"
+            />
+
+        <EditTextPreference
+            app:key="ip_address"
+            app:title="Adresse IP"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="10.10.2.25"/>
+
+        <EditTextPreference
+            app:key="title"
+            app:title="Titre"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue=""/>
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>
